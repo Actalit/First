@@ -1,8 +1,11 @@
 choice = input('''Enter what you wish to do-
                'e' for exponent
-               'p'to check for perfect number
+               'p' to check for perfect number
                'r' to find square root
-               'f' to find factorial:--''')
+               'f' to find factorial
+							 'pf' to check for a perfect number
+							 'pl' to check for palindrome
+						 	 'a' to check for armstrong:--''')
 if choice=='e':
     num = float(input("Enter a number:"))
     power = int(input("Enter the power to raise the number to:"))
