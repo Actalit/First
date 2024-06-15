@@ -1,0 +1,32 @@
+choice = input('''Enter what you wish to do-
+               'e' for exponent
+               'p'to check for perfect number
+               'r' to find square root
+               'f' to find factorial:--''')
+if choice=='e':
+    num = float(input("Enter a number:"))
+    power = int(input("Enter the power to raise the number to:"))
+    answer = (num**power)
+    print(answer)
+elif choice=='p':
+    num = int(input("Enter number:"))
+    divisor = []
+    for i in range(1,num):
+        if num%i==0:
+            divisor.append(i)
+    if sum(divisor)==num:
+        print("It is a perfect number.")
+    else:
+        print("It is an imperfect number.")
+elif choice=='r':
+    num = float(input("Enter number:"))
+    sqrt = num**(1/2)
+    print(sqrt)
+elif choice=='f':
+    num = int(input("Enter number:"))
+    factorial=1
+    for i in range(2,num+1):
+        factorial*=i
+    print(factorial)
+            
+    
