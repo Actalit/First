@@ -1,8 +1,6 @@
 choice = int(input('''Choose which of the following you wish to do:
                1- Generate a Report Card
-               2- Play rock, paper scissors
-               3- Password Generator
-               4- Future Ideas: '''))
+               2- Play rock, paper scissors: '''))
 
 if choice == 1:
     # inputs for general info to be commonly used#
@@ -114,19 +112,3 @@ if choice== 2:
         play_again= input("Do you wish to play again? (y/n):").lower()
         if not play_again=="y":
             Running = False
-if choice== 3:
-    import random
-    alphabets = ("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","w","y","z")
-    generator = True
-    while generator== True:
-        numbers = random.randint(1,100)
-        alphabets = random.choice(alphabets)
-        print(f"{numbers}{alphabets}{alphabets}{alphabets}{alphabets}{numbers}")
-        retry = input("Do you want another password? (y/n):")
-        if not retry=="y":
-            generator = False        
-if choice ==4:
-    print('''1-Text Based RPG Game
-             2-Calculator with tkinter module
-             3-Url shortener
-             4-Password manager''')
