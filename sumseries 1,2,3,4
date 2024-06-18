@@ -1,0 +1,34 @@
+choice = int(input("Enter 1,2,3 or 4: "))
+  if choice==1:
+    x = int(input("Enter any value: "))
+    n = int(input("Enter any value: "))
+    total = []
+    for i in range(n+1):
+      s = x**i
+      total.append(s)
+    print (sum(total)
+  elif choice==2:
+    x= int(input("Enter any value: "))
+    n= int(input("Enter any value: "))
+    total=[]
+    for i in range(n+1):
+      s = (-x)**i
+      total.append(s)
+    print(sum(total))
+  elif choice==3:
+    x= int(input("Enter any value: "))
+    n= int(input("Enter any value: "))
+    total=[]
+    for i in range(1,n+1):
+      s=(-x)**i/i
+      total.append(s)
+    print(sum(total))
+  elif choice==4:
+    x= int(input("Enter any value: "))
+    n= int(input("Enter any value: "))
+    total=[]
+    fact=1
+    for i in range(1,n+1):
+      s=((-x)**i)/(fact*i)
+      total.append(s)
+    print(sum(total))
