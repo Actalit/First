@@ -3,6 +3,7 @@ choice = input('''Enter what you wish to do-
                'p' to check for perfect number
                'r' to find square root
                'f' to find factorial
+			   'fi' for fibonacci sequence
 	           'pf' to check for a perfect number
 	           'pl' to check for palindrome
 	           'a' to check for armstrong:--''')
@@ -31,7 +32,19 @@ elif choice=='f':
     for i in range(2,num+1):
 	factorial*=i
     print(factorial)
-elif choice=='pl'
+elif choice=='fi':
+	n=int(input("Enter number: "))
+	a=1
+	b=0
+	sum=a+b
+	count=0
+	while count<n:
+		a=b
+		b=sum
+		sum=a+b
+		count+=1
+	print(sum)
+elif choice=='pl':
     s=input("Enter word: ")
     x = s[::-1]
     if s==x:
